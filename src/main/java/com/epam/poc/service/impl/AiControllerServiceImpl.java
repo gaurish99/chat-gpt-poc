@@ -35,7 +35,7 @@ public class AiControllerServiceImpl implements AiControllerService {
 			requestBodyString = ow.writeValueAsString(aiRequest);
 			HttpHeaders headers = new HttpHeaders();
 			headers.setContentType(MediaType.APPLICATION_JSON);
-			headers.setBearerAuth("Api-Key-Add");
+
 			headers.setBearerAuth("Api-Key-Add");
 
 			HttpEntity<String> entity = new HttpEntity<>(requestBodyString, headers);
